@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  background-color: #5c946e;
+  border-radius: 10px;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.NotfoundContainer {
+  background-color: #F3F4F6;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.wowImage {
+  margin-bottom: 20px;
+  border-radius: 50%;
+ 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.errorTitle {
+  color: #000 !important;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.errorMessage {
+  color: #000 !important;
+  margin-bottom: 20px;
+}
+
+.homeLink {
+  display: inline-block;
+  padding: 10px;
+  background-color: #8b5e3c;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.homeLink:hover {
+  background-color: #734c31;
+}

@@ -1,0 +1,189 @@
+.column_r {
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+  padding-right: 40px;
+}
+
+.historiqueContainer {
+  @apply p-5 bg-gray-100 rounded-lg shadow-lg m-5 text-black;
+}
+
+.historiqueContainer h1 {
+  @apply text-2xl font-bold mb-5 text-black;
+}
+
+.historiqueContainer ul {
+  @apply list-none p-0;
+}
+
+.historiqueContainer li {
+  @apply bg-white mb-2 p-4 rounded-md shadow-sm transition-colors duration-300 text-black;
+}
+
+
+.historiqueContainer li:hover {
+  background-color: white;
+}
+
+.profileContainer {
+  @apply p-5 bg-gray-100 rounded-lg shadow-lg m-5 text-black;
+}
+
+.profileContainer h1 {
+  @apply text-2xl font-bold mb-5 text-black;
+}
+
+.profileContainer ul {
+  @apply list-none p-0;
+}
+
+.profileContainer li {
+  @apply bg-white mb-2 p-4 rounded-md shadow-sm transition-colors duration-300 text-black;
+}
+
+
+.profileContainer li:hover {
+  background-color: white;
+}
+
+@media (max-width: 580px) {
+  .historiqueContainer h1 {
+    font-size: medium;
+  }
+
+  .profileContainer h1 {
+    font-size: 1rem;
+  }
+
+  .profileContainer {
+    margin: 0;
+  }
+
+  .historiqueContainer {
+    margin: 20px 0px 0px 0px;
+  }
+
+  .column_l {
+    display: none;
+  }
+
+  .column_r {
+    width: 100%;
+  }
+}
+
+.grandTirage {
+  @apply p-5 bg-gray-100 m-5 text-black;
+}
+
+.recoveryInfo h2 {
+  font-size: 1.875rem;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 0.75rem;
+}
+
+.recoveryInfo p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 0.5rem;
+}
+
+.shopLink {
+  color: #8b5e3c;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  background-color: #5c946e;
+  border-radius: 10px;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.column_l {
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.column_r {
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+  padding-right: 40px;
+}
+
+.historiqueContainer, .profileContainer {
+  background-color: #F3F4F6;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.historiqueContainer ul, .profileContainer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.historiqueContainer li, .profileContainer li {
+  background-color: white;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.grandTirage {
+  color: #000 !important;
+
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.recoveryInfo h2 {
+  color: #000 !important;
+  font-size: 1.875rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.recoveryInfo p {
+  color: #000 !important;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.shopLink {
+  color: #8b5e3c;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+@media (max-width: 580px) {
+  .column_l, .column_r {
+    width: 100%;
+    padding: 0;
+  }
+
+  .column_r {
+    display: none;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .profileContainer {
+    width: 100%;
+  }
+}

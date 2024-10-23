@@ -1,0 +1,53 @@
+.contest-banner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 100px;
+    font-family: "Londrina Solid", sans-serif;
+  }
+  
+  .contest-title {
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    margin: 10px 0;
+    font-family: "Londrina Solid", sans-serif;
+  }
+  
+  .contest-text {
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    font-family: "Londrina Solid", sans-serif;
+  }
+  
+  .contest-image {
+    width: 100%;
+    height: 450px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .contestButton {
+    margin-top: 20px;
+    font-size: 1.25rem;
+    color: #FFFFFF;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+    font-family: "Londrina Solid", sans-serif;
+  }
+  
+  .contest-button:hover {
+    color: #ff4b2b;
+  }
+  @media (max-width: 480px) {
+    .contest-image {
+      height: 200px;
+    }
+    .contest-banner-container {
+      margin-bottom: 50px;
+    }
+  }

@@ -1,0 +1,76 @@
+.footer {
+  flex-shrink: 0;
+  text-align: center;
+  padding: 10px;
+  background: linear-gradient(to top, #17A100, rgba(255, 255, 255, 0));
+  color: #ffffff;
+  width: 100%;
+  padding-top: 220px;
+  margin-top: -200px;
+  box-sizing: border-box;
+}
+
+.footerLinks {
+  margin-bottom: 20px;
+}
+
+.link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.newsletter {
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+.newsletterLabel {
+  font-size: 1em;
+  color: #ffffff;
+  margin-right: 10px;
+}
+
+.newsletterForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.newsletterInput {
+  padding: 10px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  color: #000;
+  margin-right: 10px;
+  margin-left: 10px;
+  font-size: 0.9em;
+  width: 250px;
+}
+
+.newsletterButton {
+  padding: 10px 20px;
+  background-color: #8b5e3c;
+  color: #ffffff;
+  margin-top: 10px;
+  border: none;
+  font-size: 0.9em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletterButton:hover {
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+.disclaimer {
+  font-size: 0.7em;
+  color: #ffffff;
+  margin-top: -20px;
+}

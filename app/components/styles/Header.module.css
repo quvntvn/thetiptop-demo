@@ -1,0 +1,163 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(to bottom, #17A100, rgba(255, 255, 255, 0));
+}
+
+.closeButton {
+  display: none;
+  font-size: 3em;
+  margin-top: 20px;
+  cursor: pointer;
+  z-index: 1100;
+  color: #000;
+  transition: transform 0.3s ease;
+}
+
+.closeButton:hover,
+.closeButton:active {
+  transform: scale(1.2);
+}
+
+.logo {
+  height: 100px;
+}
+.menuIcon {
+  display: none;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.navMenu {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.navLink {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: 500;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.navLink:hover {
+  color: #f0f0f0;
+  text-decoration: underline;
+}
+
+.btnLogin {
+  padding: 1dvh 5vh;
+  background-color: transparent;
+  font-size: 1.5em;
+  color: #8b5e3c;
+  border: 2px solid #8b5e3c;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btnLogin:hover {
+  background-color: #8b5e3c;
+  color: white;
+}
+
+.btnProfile {
+  padding: 1vh 3vh;
+  background-color: #8b5e3c;
+  font-size: 1.5em;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 1px 10px 1px 10px;
+}
+.welcome {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin: 1px 10px 1px 10px;
+}
+
+@media (max-width: 1075px) {
+  .navMenu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../../public/images/background.png');
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding-top: 30%;
+    z-index: 100;
+  }
+
+  .navMenu div {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navMenu.active {
+    display: flex;
+  }
+
+  .menuIcon {
+    display: block;
+  }
+
+  .closeButton {
+    display: block;
+    margin-top: 20px;
+    position: static;
+  }
+
+  .btnProfile {
+    margin: 10px;
+  }
+
+  .welcome {
+    margin: 10px;
+  }
+
+  .logo {
+    height: 60px;
+  }
+}
+
+.btnLogin {
+  padding: 1dvh 5vh;
+  background-color: #8b5e3c;
+  font-size: 1.2em;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btnLogin:hover {
+  background-color: #734c31;
+}
+
+.btnRegister {
+  padding: 1dvh 5vh;
+  background-color: #8b5e3c;
+  font-size: 1.2em;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.btnRegister:hover {
+  background-color: #734c31;
+}
+
+.authButtons {
+  display: flex;
+  gap: 10px;
+}

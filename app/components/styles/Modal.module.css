@@ -1,0 +1,66 @@
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+  
+.modal {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    color: #000 !important;
+}
+  
+.prizeImage {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5%;
+    margin-bottom: 20px;
+}
+  
+.closeButton, .linkButton {
+    padding: 10px 20px;
+    background-color: #8b5e3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em !important;
+    margin: 10px 5px;
+}
+  
+.closeButton:hover, .linkButton:hover {
+    background-color: #734c31;
+}
+  
+.titre {
+    color: #000 !important;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+  
+.ptext {
+    color: #000 !important;
+    margin-bottom: 20px;
+    font-size: 1em !important;
+}
+
+.shopLink {
+    color: #8b5e3c;
+    text-decoration: underline;
+    cursor: pointer;
+}

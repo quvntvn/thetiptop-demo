@@ -1,0 +1,31 @@
+.layoutBackground {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('../../../public/images/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+
+  .footer {
+    flex-shrink: 0;
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(to top, #17A100, rgba(255, 255, 255, 0));
+    color: #ffffff;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .ClientLayout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .page-container {
+    flex-grow: 1;
+  }
+  
