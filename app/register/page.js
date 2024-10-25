@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { GoogleLogin } from '@react-oauth/google';
-import FacebookLogin from 'react-facebook-login/dist/facebook-login-render-props';
 import styles from '../components/styles/login.module.css';
 import ClientLayout from '@/components/ClientLayout';
 
@@ -292,17 +291,6 @@ export default function RegisterPage() {
             <GoogleLogin
               onSuccess={handleGoogleSuccess}
               onError={() => setError('Erreur lors de la connexion avec Google')}
-            />
-            <FacebookLogin
-              appId={process.env.NEXT_PUBLIC_FACEBOOK_APP_ID}
-              autoLoad={false}
-              fields="name,email,picture"
-              callback={handleFacebookSuccess}
-              render={(renderProps) => (
-                <button onClick={renderProps.onClick} className={styles.facebookButton}>
-                <p>Se connecter avec Facebook</p>
-              </button>
-              )}
             />
           </div>
 
